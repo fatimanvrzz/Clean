@@ -16,12 +16,12 @@ const imageMapping: Record<string, string> = {
 const ServiceGif = () => {
     return (
         <div className="w-full max-w-[90.25rem] mx-auto bg-[#EFEFEF] sm:bg-transparent py-[5.0625rem] px-4 md:px-[4.375rem] sm:mb-0">
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-left space-y-4 sm:space-y-0">
+            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 text-left">
                 <p className="w-full sm:w-[25rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15]">
                     Deep <span className="text-[#0F42FF]">Cleaning</span> Spotless Results
                 </p>
                 
-                <p className="text-[#5C5C5E] w-full sm:w-[32.125rem] text-base sm:text-[1.25rem] mt-4  mb-[1.5rem] sm:mt-0">
+                <p className="text-[#5C5C5E] sm:w-[32.125rem] text-base sm:text-[1.25rem] pt-6 pl-7 sm:mt-0">
                     Our company offers modern cleaning technologies and environmentally safe solutions.
                 </p>
             </div>
