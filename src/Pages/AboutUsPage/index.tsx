@@ -20,9 +20,8 @@ const AboutUsPage = () => {
   return (
 
     <div className="page-wrapper">
+      <Navbar />
       <div className="page-container">
-        <Navbar />
-
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left">
           <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem]">
             Transforming Spaces with <span className="text-[#0F42FF]">Professional Cleaning</span>
