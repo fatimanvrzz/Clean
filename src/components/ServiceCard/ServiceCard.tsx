@@ -38,7 +38,9 @@ const ServiceCard = () => {
   return (
     <div className="w-full mt-[5.75rem]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-        <div className="text-[2.5rem] font-medium text-left mb-[3.125rem]">Services</div>
+        <div className="text-[2.5rem] font-medium text-left mb-[3.125rem]">
+          Services
+        </div>
         <div className="block sm:hidden mb-[3.125rem]">
           <ServiceMap />
         </div>
@@ -51,16 +53,16 @@ const ServiceCard = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="bg-[#F8F8FF] border-2 border-[#EFEFEF] rounded-lg p-[1.875rem] hover:bg-[#EFEFEF] cursor-pointer"
+            className="bg-[#F8F8FF] border-2 border-[#EFEFEF] rounded-lg p-[1.875rem] hover:bg-[#EFEFEF] cursor-pointer flex flex-col items-center sm:items-start sm:text-left"
             onClick={() => setIsClicked(!isClicked)}
           >
             <img
               src={service.img}
               alt={service.title}
-              className="w-[2.5rem] h-[2.5rem] object-cover mb-4"
+              className="h-[2.5rem] object-cover mb-4 "
             />
-            <h3 className="text-[1.625rem] font-normal">{service.title}</h3>
-            <p className="text-gray-600 text-[0.875rem] mt-[1rem] w-[14rem] line-clamp-4">
+            <h3 className="text-[1.625rem] font-normal mb-2">{service.title}</h3>
+            <p className="text-gray-600 text-[0.875rem] w-[14rem] line-clamp-4">
               {service.description}
             </p>
           </div>

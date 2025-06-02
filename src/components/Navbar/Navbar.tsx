@@ -8,13 +8,11 @@ import { useState } from "react";
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
-
   return (
-    <div className="flex items-center cursor-pointer">
-      <div className="flex items-center mt-[2.0625rem] w-[82rem] justify-between">
-
+    <div className="flex items-center cursor-pointer w-full ">
+     <div className="flex items-center mt-[2.0625rem] w-full max-w-[81.25rem] justify-between mx-auto">
         {/* Logo */}
-        <div className="flex 2xl:block xl:block lg:block md:block sm:block text-center">
+        <div className="flex text-center">
           <div className="mx-auto">
             <Link to='/'>
               <img
@@ -67,7 +65,7 @@ const Navbar = () => {
 
         {/* Mobile */}
         {menu && (
-          <div className="absolute top-16 right-0 bg-white shadow-lg p-4 w-64 md:hidden text-[1.0625rem]">
+          <div className="absolute top-16 right-4 bg-white shadow-lg p-4 w-64 md:hidden text-[1.0625rem] z-50">
             <ul className="flex flex-col gap-4">
               <li><Link to="/services">Services</Link></li>
               <li><Link to="/about-us">About Us</Link></li>
@@ -76,7 +74,7 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-        
+
       </div>
     </div>
   );

@@ -1,21 +1,21 @@
 [
     {
         "staticSrc": "/images/gif1.svg",
-        "gifSrc": "/images/animated1.gif",
+        "gifSrc": "/images/video1.mp4",
         "title": "Chemical-Free Steam Cleaning",
         "description": "High-temperature steam to eliminate bacteria, allergens, and dirt without any toxic residues.",
         "buttonText": "Eco-Friendly"
     },
     {
         "staticSrc": "/images/gif2.svg",
-        "gifSrc": "/images/animated2.gif",
+        "gifSrc": "/images/video2.mp4",
         "title": "Microfiber Cloths & HEPA Filter Vacuums",
         "description": "Effectively capture dust and allergens for a healthier environment",
         "buttonText": "Non-Toxic"
     },
     {
         "staticSrc": "/images/gif3.svg",
-        "gifSrc": "/images/animated2.gif",
+        "gifSrc": "/images/video3.mp4",
         "title": "Natural Essential Oils for Disinfection",
         "description": "We incorporate antibacterial essential oils like lavender, tea tree for a fresh, chemical-free clean.",
         "buttonText": "Green Cleaning"

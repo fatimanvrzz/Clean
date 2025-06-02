@@ -1,14 +1,16 @@
 import Navbar from "../../components/Navbar/Navbar"
-// import BlogComponent from "../../components/BlogComponent/BlogComponent"
 import Blog from "../../assets/images/blog.png"
+import BlogSlider from "../../components/BlogComponent/BlogsSlider"
+import Footer from "../../components/Footer/Footer"
+
 
 
 const BlogPage = () => {
     return (
-        <div className="page-wrapper">
+        <div className="flex flex-col items-center w-full">
             <Navbar />
 
-            <div className="page-container">
+            <div className="w-full max-w-[82rem]">
 
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left">
                     <p className="w-full sm:w-[35rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem]">
@@ -33,7 +35,16 @@ const BlogPage = () => {
                         </div>
                     </div>
                 </div>
+
+
+                <div className=" sm:flex-row sm:items-end text-left">
+                    <p className="w-full sm:w-[35rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem]">
+                        <span className="text-[#0F42FF]">Eco-Friendly</span> Practices for a Healthier Home
+                    </p>
+                </div>
+                <BlogSlider />
             </div>
+            <Footer/>
         </div>
     )
 }

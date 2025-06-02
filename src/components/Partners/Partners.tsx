@@ -8,7 +8,7 @@ import Marriott from "../../assets/images/marriott-logo.svg";
 
 const Partners = () => {
   return (
-    <div className="w-[81.25rem] justify-between mt-[4.0625rem] mb-[5.125rem]">
+    <div className="w-full max-w-[82rem] justify-between mt-[4.0625rem] mb-[5.125rem]">
       <div className="partners-container">
         <div className="logos-wrapper">
           <img src={Abb} alt="abb logo" className="logo" />

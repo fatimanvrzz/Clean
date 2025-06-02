@@ -19,10 +19,10 @@ const imageList = [
 const AboutUsPage = () => {
   return (
 
-    <div className="page-wrapper">
+    <div className="flex flex-col items-center w-full">
       <Navbar />
-      <div className="page-container">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left">
+      <div className="w-full max-w-[82rem]">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left ">
           <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem]">
             Transforming Spaces with <span className="text-[#0F42FF]">Professional Cleaning</span>
           </p>
@@ -36,16 +36,20 @@ const AboutUsPage = () => {
           <img src={AboutUsPic} className="w-full h-[656px] rounded-3xl" />
         </div>
 
-        <div className="flex justify-between items-start w-full mt-[91px]">
-          <p className="text-[#0F42FF] w-[232px] text-[20px]">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full mt-[91px] gap-6">
+          <p className="text-[#0F42FF] w-full sm:w-[232px] text-[20px]">
             We offer a wide range of Cleaning Services
           </p>
-          <h2 className="text-[#474749] w-[720px] text-[42px] text-justify tracking-tight">Home, apartment, office, hotel, window, facade, and exterior cleaning services. <span className="text-[#0F42FF]">Our professionals</span> is ready to meet the needs of individuals, office owners, and large institutions.</h2>
+          <h2 className="text-[18px] sm:text-[42px] text-[#474749] w-full sm:w-[720px] text-justify tracking-tight">
+            Home, apartment, office, hotel, window, facade, and exterior cleaning services. <span className="text-[#0F42FF]">Our professionals</span> is ready to meet the needs of individuals, office owners, and large institutions.
+          </h2>
         </div>
 
-        <div className="mt-[194px] text-[46px] text-[#000] w-[556px]">
+
+        <div className="mt-[194px] text-[46px] text-[#000] w-full sm:w-[556px]">
           <h2>Our Skilled Team <span className="text-[#0F42FF]">Committed to Excellence</span></h2>
         </div>
+
 
         {/* burda error var */}
         <div className="mt-6 px-4 sm:px-0">
@@ -83,23 +87,29 @@ const AboutUsPage = () => {
         </div>
 
         <div className="mt-[42px]">
-          <p className="w-[775px] text-[20px] text-[#000]">While professional cleaning services are available from multiple companies in Baku, our company stands out for its wide range of services, exceptional quality, and a commitment to customer satisfaction.</p>
+          <p className="w-full sm:w-[775px] text-[20px] text-[#000]">
+            While professional cleaning services are available from multiple companies in Baku, our company stands out for its wide range of services, exceptional quality, and a commitment to customer satisfaction.
+          </p>
         </div>
 
-        <div className="mt-[194px] w-[550px] h-[116px]">
-          <h1 className="text-[46px]">The Reliable Partners Who Support <span className="text-[#0F42FF]">Our Mission</span></h1>
+
+        <div className="mt-[194px] w-full sm:w-[550px] h-auto sm:h-[116px] px-4 sm:px-0">
+          <h1 className="text-[18px] sm:text-[46px]">
+            The Reliable Partners Who Support <span className="text-[#0F42FF]">Our Mission</span>
+          </h1>
         </div>
+
 
         <div className="mt-[78px]">
           <Partners />
         </div>
 
         <div className="mt-[213px]">
-          <HowItWorks/>
+          <HowItWorks />
         </div>
       </div>
-      
-      <Footer/>
+
+      <Footer />
     </div>
 
   )

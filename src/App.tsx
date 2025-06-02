@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import AboutUsPage from "./Pages/AboutUsPage";
 import HomePage from "./Pages/HomePage"
 import BlogPage from "./Pages/BlogPage";
+import ContactPage from "./Pages/ContactPage";
 
 
 const App: React.FC = () => {
@@ -11,7 +12,8 @@ const App: React.FC = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/about-us" element={<AboutUsPage />} />
       <Route path="/blog" element={<BlogPage />} />
-    </Routes>
+      <Route path="/contact" element={<ContactPage />} />
+    </Routes> 
 
   );
 };

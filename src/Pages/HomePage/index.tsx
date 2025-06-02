@@ -33,15 +33,14 @@ const HomePage = () => {
             <source src={Gif} type="video/mp4" />
             Sizin brauzeriniz bu videonu dəstəkləmir.
           </video>
-
-          <Quote />
+          <Quote className="bottom-4 mr-auto text-left md:text-right md:ml-auto md:mr-0 md:left-4 right-4" />
         </div>
-        <div className="w-full flex mt-[2.5rem] text-[1rem] text-[#5C5C5E]">
-          <p className="ml-auto text-left max-w-[30.75rem] h-[2.5rem] hidden md:block">
+        <div className="w-full flex mt-[1rem] text-[1rem] text-[#5C5C5E]">
+          <p className="ml-auto text-left max-w-[30.75rem] hidden md:block">
             From top to bottom, we make your space shine, let us handle the mess while you focus on what matters.
           </p>
 
-          <p className="mr-auto text-left w-[16rem] h-[2.5rem] block md:hidden">
+          <p className="mr-auto text-left w-[16rem] block md:hidden">
             We make your space shine—let us handle the mess.
           </p>
         </div>

@@ -1,20 +1,30 @@
 [
+    
     {
         "type": "Insight",
-        "name": "The Importance of Regular Deep Cleaning for Your Health",
+        "picture": "/images/blog-comp.svg",
+        "name": "How Our Cleaning Services Save You Time and Effort",
         "description": "Deep cleaning removes hidden dirt and germs, improving air quality and reducing health risks for a safer, healthier home.",
         "date": "Dec 14, 2024"
     },
     {
         "type": "Insight",
-        "name": "The Importance of Regular Deep Cleaning for Your Health",
+        "picture": "/images/blog-comp.svg",
+        "name": "How Our Cleaning Services Save You Time and Effort",
         "description": "Deep cleaning removes hidden dirt and germs, improving air quality and reducing health risks for a safer, healthier home.",
         "date": "Dec 14, 2024"
     },
     {
         "type": "Insight",
-        "picture": "https://example.com/image.jpg",
-        "name": "The Importance of Regular Deep Cleaning for Your Health",
+        "picture": "/images/blog-comp.svg",
+        "name": "How Our Cleaning Services Save You Time and Effort",
+        "description": "Deep cleaning removes hidden dirt and germs, improving air quality and reducing health risks for a safer, healthier home.",
+        "date": "Dec 14, 2024"
+    },
+    {
+        "type": "Insight",
+        "picture": "/images/blog-comp.svg",
+        "name": "How Our Cleaning Services Save You Time and Effort",
         "description": "Deep cleaning removes hidden dirt and germs, improving air quality and reducing health risks for a safer, healthier home.",
         "date": "Dec 14, 2024"
     }
