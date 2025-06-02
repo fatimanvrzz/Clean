@@ -59,6 +59,8 @@ const HomePage = () => {
       <HowItWorks />
       <FAQ />
       <Footer />
+
+      adada
     </div>
   );
 }
