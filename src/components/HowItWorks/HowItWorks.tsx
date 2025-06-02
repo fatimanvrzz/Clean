@@ -26,19 +26,18 @@ const HowItWorks = () => {
     <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[81.25rem] mt-[5.125rem] px-4 lg:px-0 gap-12">
       <p className="text-[1.5rem] font-medium w-full lg:w-[15rem]">How it Works</p>
 
-      <div className="w-full flex flex-col border-b border-[#E6E6E6] gap-[3rem]">
+      <div className="w-full lg:w-[903px] flex flex-col border-b border-[#E6E6E6] gap-[1rem]">
         {howItWorksData.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row justify-between ${index !== 0 ? "border-t border-[#E6E6E6]" : ""
-              } ${index === howItWorksData.length - 1 ? "pt-8" : ""}`}
+            className={`flex flex-col lg:flex-row justify-between ${index !== howItWorksData.length - 1 ? "border-b border-[#E6E6E6] pb-5" : ""}`}
           >
             <div className="flex flex-col lg:flex-row items-start w-full">
               <p className="text-[1.625rem] text-[#0F42FF] w-full lg:w-[15.375rem] flex-shrink-0">
                 {item.caption}
               </p>
-              <div className="flex flex-col lg:flex-row items-center w-full gap-[2rem]">
-                <div className="flex flex-col w-full ">
+              <div className="flex flex-col lg:flex-row items-center w-full">
+                <div className="flex flex-col w-full">
                   <div className="flex items-center justify-between w-full">
                     <p className="text-[1.25rem] font-medium text-[#0A0A0A] opacity-80">
                       {item.title}

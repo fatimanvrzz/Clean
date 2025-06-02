@@ -51,8 +51,9 @@ const ImageCard: React.FC<ImageCardProps> = ({ staticSrc, gifSrc, title, descrip
       </button>
 
       <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/70 to-transparent rounded-2xl flex flex-col justify-end p-4 z-20">
-        <h3 className="text-[#F8F8FF] text-lg w-[12.9375rem] font-sans leading-5">{title}</h3>
-        <p className="text-[#B7B7BC] text-sm opacity-70 w-[20.875rem] mt-[0.6875rem] font-sans">{description}</p>
+        <h3 className="text-[#F8F8FF] text-left text-lg w-[12.9375rem] font-sans leading-5">{title}</h3>
+        <p className="text-[#B7B7BC] text-sm text-left opacity-70 w-[20.875rem] mt-[0.6875rem] font-sans">{description}</p>
+        
       </div>
     </div>
   );

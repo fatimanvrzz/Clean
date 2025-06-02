@@ -36,14 +36,10 @@ const ServiceGif = () => {
 
       {/* Swiper for Mobile */}
       <div className="sm:hidden mt-6">
-        <Swiper
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-        >
+        <Swiper spaceBetween={20} slidesPerView={1} loop={true}>
           {imageData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center">
+              <div className="flex text-left w-full">
                 <ImageCard
                   staticSrc={imageMapping[item.staticSrc] || item.staticSrc}
                   gifSrc={videoMapping[item.gifSrc] || item.gifSrc}
@@ -58,7 +54,7 @@ const ServiceGif = () => {
       </div>
 
       {/* Grid for Desktop */}
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-[1.5rem] place-items-center mt-16 sm:mt-[3.75rem]">
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-[1.5rem] place-items-start mt-16 sm:mt-[3.75rem]">
         {imageData.map((item, index) => (
           <ImageCard
             key={index}
@@ -70,6 +66,7 @@ const ServiceGif = () => {
           />
         ))}
       </div>
+
     </div>
   );
 };
