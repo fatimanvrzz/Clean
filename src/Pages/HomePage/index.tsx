@@ -60,7 +60,7 @@ const HomePage = () => {
       <FAQ />
       <Footer />
 
-      adada
+      
     </div>
   );
 }

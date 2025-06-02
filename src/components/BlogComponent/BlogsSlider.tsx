@@ -2,16 +2,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Pagination } from 'swiper/modules';
 import '../BlogComponent/Slider.css';
-import blogData from '../../components/BlogComponent/Blog.json';
 import SwiperComponent from './SwiperComponent';
 
-interface BlogItem {
-  type: string;
-  picture: string;
-  name: string;
-  description: string;
-  date: string;
-}
+// interface BlogItem {
+//   type: string;
+//   picture: string;
+//   name: string;
+//   description: string;
+//   date: string;
+// }
 
 const BlogSlider = () => {
   return (
