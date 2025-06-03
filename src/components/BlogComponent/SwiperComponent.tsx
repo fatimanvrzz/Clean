@@ -16,7 +16,6 @@ const SwiperComponent = () => {
                 <p className="text-[14px] text-[#474749] mt-[50px]">Dec 14, 2024</p>
             </div>
             <div>
-                {/* Şəkil əlavə olunacaqsa buraya qoy */}
                 <img src={Blog} alt="Blog" className=" rounded-lg" />
             </div>
         </div>

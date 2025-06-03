@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 interface ImageCardProps {
   staticSrc: string;
-  gifSrc: string; // Burada videonun src-si olacaq
+  gifSrc: string; 
   title: string;
   description: string;
   buttonText: string;
