@@ -2,7 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Quote = ({ className = "" }) => {
     return (
-        <div className={`absolute z-10 ${className}`}>
+        <div className={`${className}`}>
             <div className="flex justify-between items-center 
                 w-[12rem] sm:w-[14rem] md:w-[16rem] lg:w-[17.25rem] 
                 h-[3rem] sm:h-[3.125rem] 

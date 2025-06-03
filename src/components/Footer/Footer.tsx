@@ -11,19 +11,19 @@ const Footer = () => {
 
         {/* Logo and Icons */}
         <div className="flex flex-col items-center lg:items-start lg:mb-0">
-          <img src={Logo} alt="CleanAz Logo" className="w-[9.125rem] h-[1.9375rem] mb-4" />
-          
+          <img src={Logo} alt="CleanAz Logo" className="w-[9.125rem] h-[1.9375rem] mb-[24px]" />
+
           {/* Quote and Social Media Icons */}
-          <div className="flex flex-col items-center lg:items-start mt-[0.5rem]">
-            <Quote/>
-            <div className="flex gap-[0.75rem] mt-[1.5rem]">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border-1 rounded-full">
+          <Quote />
+          <div className="flex flex-col items-center lg:items-start mt-[24px]">
+            <div className="flex gap-[0.75rem]">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border rounded-full">
                 <img src={instagram} alt="Instagram" className="w-[1.75rem] h-[1.75rem]" />
               </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border-1 rounded-full">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border rounded-full">
                 <img src={facebook} alt="Facebook" className="w-[1.75rem] h-[1.75rem]" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border-1 rounded-full">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 flex items-center justify-center bg-none border-[#C5C5CC] border rounded-full">
                 <img src={whatsup} alt="WhatsApp" className="w-[1.75rem] h-[1.75rem]" />
               </a>
             </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 text-center lg:text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-3 text-center gap-10 mt-10 lg:text-left">
           <div>
             <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Company</h3>
             <ul className="mt-[1.25rem]">

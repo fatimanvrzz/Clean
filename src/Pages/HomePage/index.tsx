@@ -33,7 +33,8 @@ const HomePage = () => {
             <source src={Gif} type="video/mp4" />
             Sizin brauzeriniz bu videonu dəstəkləmir.
           </video>
-          <Quote className="bottom-4 mr-auto text-left md:text-right md:ml-auto md:mr-0 md:left-4 right-4" />
+          <Quote className="absolute z-10 bottom-4 mr-auto text-left md:text-right md:ml-auto md:mr-0 md:left-4 right-4" />
+
         </div>
         <div className="w-full flex mt-[1rem] text-[1rem] text-[#5C5C5E]">
           <p className="ml-auto text-left max-w-[30.75rem] hidden md:block">
