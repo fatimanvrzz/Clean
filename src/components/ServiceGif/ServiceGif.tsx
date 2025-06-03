@@ -29,7 +29,7 @@ const ServiceGif = () => {
         <p className="w-full sm:w-[25rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15]">
           Deep <span className="text-[#0F42FF]">Cleaning</span> Spotless Results
         </p>
-        <p className="text-[#5C5C5E] sm:w-[32.125rem] text-base sm:text-[1.25rem] pt-6 pl-7 sm:mt-0">
+        <p className="text-[#5C5C5E] sm:w-[32.125rem] text-base sm:text-[1.25rem] pt-6 sm:mt-0">
           Our company offers modern cleaning technologies and environmentally safe solutions.
         </p>
       </div>
