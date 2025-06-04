@@ -48,6 +48,7 @@ const HomePage = () => {
         <div className="relative z-10 w-full">
           <ServiceCard />
         </div>
+        {/* dsfadfad */}
       </div>
 
       {/* About Us Section */}
@@ -57,7 +58,7 @@ const HomePage = () => {
 
       <Partners />
       <ServiceGif />
-      
+
       <div className="w-full px-4">
         <HowItWorks />
       </div>
