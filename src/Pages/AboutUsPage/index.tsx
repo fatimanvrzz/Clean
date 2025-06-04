@@ -20,39 +20,39 @@ const AboutUsPage = () => {
   return (
 
     <div className="flex flex-col items-center w-full">
-      <Navbar />
-      <div className="w-full max-w-[82rem]">
+      <div className="max-w-[81.25rem] w-[90%] sm:w-[95%] md:w-[90%] lg:w-[90%] min-h-screen relative">
+        <Navbar />
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left ">
-          <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem]">
+          <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem] text-[22px]">
             Transforming Spaces with <span className="text-[#0F42FF]">Professional Cleaning</span>
           </p>
 
-          <p className="text-[#5C5C5E] sm:w-[36rem] text-base sm:text-[1.25rem] text-justify pl-7 sm:mt-0">
+          <p className="text-[#5C5C5E] sm:w-[36rem] font-medium sm:text-[18px] sm:pl-7 sm:mt-0 text-[12px]">
             As a leading cleaning service provider in Baku, we specialize in professional cleaning for homes, offices, hotels, and more, with a strong reputation for high-quality service.
           </p>
         </div>
 
-        <div className="mt-[24px]">
-          <img src={AboutUsPic} className="w-full h-[656px] rounded-3xl" />
-        </div>
+        <img
+          src={AboutUsPic}
+          className="w-full h-auto sm:h-[656px] rounded-3xl object-cover mt-[22px]"
+        />
 
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full mt-[91px] gap-6">
-          <p className="text-[#0F42FF] w-full sm:w-[232px] text-[20px]">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full mt-[58px] sm:mt-[91px] gap-6">
+          <p className="text-[#0F42FF] max-w-[240px] text-[15px] sm:text-[20px]">
             We offer a wide range of Cleaning Services
           </p>
-          <h2 className="text-[18px] sm:text-[42px] text-[#474749] w-full sm:w-[720px] text-justify tracking-tight">
+          <h2 className="sm:text-[42px] text-[#474749] w-full sm:w-[720px] text-justify tracking-tight text-[18px]">
             Home, apartment, office, hotel, window, facade, and exterior cleaning services. <span className="text-[#0F42FF]">Our professionals</span> is ready to meet the needs of individuals, office owners, and large institutions.
           </h2>
         </div>
 
 
-        <div className="mt-[194px] text-[46px] text-[#000] w-full sm:w-[556px]">
+        <div className="mt-[58px] sm:mt-[194px] sm:text-[46px] text-[#000] sm:w-[556px] w-[267px] text-[20px] font-medium">
           <h2>Our Skilled Team <span className="text-[#0F42FF]">Committed to Excellence</span></h2>
         </div>
 
 
-        {/* burda error var */}
-        <div className="mt-6 px-4 sm:px-0">
+        <div className="mt-6  sm:px-0">
           <Swiper
             spaceBetween={34}
             loop={false}
@@ -86,25 +86,25 @@ const AboutUsPage = () => {
           </Swiper>
         </div>
 
-        <div className="mt-[42px]">
-          <p className="w-full sm:w-[775px] text-[20px] text-[#000]">
+        <div className="mt-[15px] sm:mt-[42px]">
+          <p className="w-full sm:w-[775px] text-[12px] sm:text-[20px] text-[#000]">
             While professional cleaning services are available from multiple companies in Baku, our company stands out for its wide range of services, exceptional quality, and a commitment to customer satisfaction.
           </p>
         </div>
 
 
-        <div className="mt-[194px] w-full sm:w-[550px] h-auto sm:h-[116px] px-4 sm:px-0">
+        <div className="mt-[58px] sm:mt-[194px] w-[267px] sm:w-[600px] font-medium sm:px-0">
           <h1 className="text-[18px] sm:text-[46px]">
             The Reliable Partners Who Support <span className="text-[#0F42FF]">Our Mission</span>
           </h1>
         </div>
 
 
-        <div className="mt-[78px]">
+        <div className="">
           <Partners />
         </div>
 
-        <div className="mt-[213px]">
+        <div className="sm:mt-[213px]">
           <HowItWorks />
         </div>
       </div>

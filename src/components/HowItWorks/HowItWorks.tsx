@@ -26,7 +26,7 @@ const howItWorksData = [
 
 const HowItWorks = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[81.25rem] mt-[5.125rem] px-4 lg:px-0 gap-12">
+    <div className="flex flex-col lg:flex-row justify-between items-start w-full lg:w-[81.25rem] mt-[5.125rem] gap-12">
       <p className="text-[1.5rem] font-medium w-full lg:w-[15rem]">How it Works</p>
 
       <div className="w-full lg:w-[903px] flex flex-col gap-[1rem]">

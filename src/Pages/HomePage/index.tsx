@@ -57,11 +57,15 @@ const HomePage = () => {
 
       <Partners />
       <ServiceGif />
-      <HowItWorks />
+      
+      <div className="w-full px-4">
+        <HowItWorks />
+      </div>
+
       <FAQ />
       <Footer />
 
-      
+
     </div>
   );
 }
