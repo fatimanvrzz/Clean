@@ -48,7 +48,6 @@ const HomePage = () => {
         <div className="relative z-10 w-full">
           <ServiceCard />
         </div>
-        {/* dsfadfad */}
       </div>
 
       {/* About Us Section */}
@@ -65,8 +64,6 @@ const HomePage = () => {
 
       <FAQ />
       <Footer />
-
-
     </div>
   );
 }

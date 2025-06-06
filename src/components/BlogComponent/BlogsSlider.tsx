@@ -4,32 +4,34 @@ import { Pagination } from 'swiper/modules';
 import '../BlogComponent/Slider.css';
 import SwiperComponent from './SwiperComponent';
 
-// interface BlogItem {
-//   type: string;
-//   picture: string;
-//   name: string;
-//   description: string;
-//   date: string;
-// }
-
 const BlogSlider = () => {
   return (
-    <div className="mt-[42px] px-4 sm:px-0 ">
+    <div className="mt-[42px]">
       <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         className="mySwiper"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+          640: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        }}
       >
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
-        <SwiperSlide><SwiperComponent/></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
+        <SwiperSlide className="!w-full sm:!w-auto"><SwiperComponent /></SwiperSlide>
       </Swiper>
     </div>
   );
