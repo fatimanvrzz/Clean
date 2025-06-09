@@ -1,4 +1,4 @@
-import { Service } from "../../Pages/ContactPage";
+import { Service } from "../../Pages/BookServicePage";
 
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const servicesData: { [key: string]: Service[] } = {
-  home: [   
+  home: [
     { room: "home", name: "Cleaning", price: 50 },
     { room: "home", name: "Painting", price: 100 },
   ],
@@ -44,11 +44,10 @@ const ServiceSelector = ({ selected, setSelected }: Props) => {
               return (
                 <button
                   key={service.name}
-                  className={`px-4 py-2 rounded border ${
-                    isSelected
+                  className={`px-4 py-2 rounded border ${isSelected
                       ? "bg-green-500 text-white"
                       : "bg-white text-gray-700 border-gray-300"
-                  }`}
+                    }`}
                   onClick={() => toggleService(service)}
                 >
                   {service.name} (${service.price})
