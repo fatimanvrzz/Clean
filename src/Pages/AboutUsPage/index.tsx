@@ -22,8 +22,8 @@ const AboutUsPage = () => {
     <div className="flex flex-col items-center w-full">
       <div className="max-w-[81.25rem] w-[90%] sm:w-[95%] md:w-[90%] lg:w-[90%] min-h-screen relative">
         <Navbar />
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left ">
-          <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] pt-[3.5rem] text-[22px]">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left mt-[55px]">
+          <p className="w-full sm:w-[39rem] text-[#0A0A0A] text-4xl sm:text-[3rem] font-medium leading-[1.15] text-[22px]">
             Transforming Spaces with <span className="text-[#0F42FF]">Professional Cleaning</span>
           </p>
 
@@ -38,7 +38,7 @@ const AboutUsPage = () => {
         />
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start w-full mt-[58px] sm:mt-[91px] gap-6">
-          <p className="text-[#0F42FF] max-w-[240px] text-[15px] sm:text-[20px]">
+          <p className="text-[#0F42FF] max-w-[240px] sm:text-[20px] text-[15px]">
             We offer a wide range of Cleaning Services
           </p>
           <h2 className="sm:text-[42px] text-[#474749] w-full sm:w-[720px] text-justify tracking-tight text-[18px]">
@@ -47,7 +47,7 @@ const AboutUsPage = () => {
         </div>
 
 
-        <div className="mt-[58px] sm:mt-[194px] sm:text-[46px] text-[#000] sm:w-[556px] w-[267px] text-[20px] font-medium">
+        <div className="mt-[58px] sm:mt-[194px] sm:text-[46px] text-[#000] sm:w-[556px] w-[267px] text-[22px] font-medium">
           <h2>Our Skilled Team <span className="text-[#0F42FF]">Committed to Excellence</span></h2>
         </div>
 
@@ -87,14 +87,14 @@ const AboutUsPage = () => {
         </div>
 
         <div className="mt-[15px] sm:mt-[42px]">
-          <p className="w-full sm:w-[775px] text-[12px] sm:text-[20px] text-[#000]">
+          <p className="w-full sm:w-[775px] text-[14px] sm:text-[20px] text-[#000]">
             While professional cleaning services are available from multiple companies in Baku, our company stands out for its wide range of services, exceptional quality, and a commitment to customer satisfaction.
           </p>
         </div>
 
 
         <div className="mt-[58px] sm:mt-[194px] w-[267px] sm:w-[600px] font-medium sm:px-0">
-          <h1 className="text-[18px] sm:text-[46px]">
+          <h1 className="sm:text-[46px] text-[24px]">
             The Reliable Partners Who Support <span className="text-[#0F42FF]">Our Mission</span>
           </h1>
         </div>
@@ -104,7 +104,7 @@ const AboutUsPage = () => {
           <Partners />
         </div>
 
-        <div className="sm:mt-[213px]">
+        <div className="">
           <HowItWorks />
         </div>
       </div>

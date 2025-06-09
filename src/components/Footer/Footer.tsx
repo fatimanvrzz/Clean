@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";
@@ -13,7 +14,6 @@ const Footer = () => {
         <div className="flex flex-col items-center lg:items-start lg:mb-0">
           <img src={Logo} alt="CleanAz Logo" className="w-[9.125rem] h-[1.9375rem] mb-[24px]" />
 
-          {/* Quote and Social Media Icons */}
           <Quote />
           <div className="flex flex-col items-center lg:items-start mt-[24px]">
             <div className="flex gap-[0.75rem]">
@@ -35,18 +35,19 @@ const Footer = () => {
           <div>
             <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Company</h3>
             <ul className="mt-[1.25rem]">
-              <li className="mt-[0.5rem]"><a href="#" className="text-[#474749] text-[1.125rem]">Services</a></li>
-              <li className="mt-[0.5rem]"><a href="#" className="text-[#474749] text-[1.125rem]">About Us</a></li>
-              <li className="mt-[0.5rem]"><a href="#" className="text-[#474749] text-[1.125rem]">Blog</a></li>
+              <li className="mt-[0.5rem]"><Link to="/" className="text-[#474749] text-[1.125rem]">Home</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/services" className="text-[#474749] text-[1.125rem]">Services</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/about-us" className="text-[#474749] text-[1.125rem]">About-us</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/blog" className="text-[#474749] text-[1.125rem]">Blog</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Services</h3>
             <ul className="text-[#474749] mt-[1.25rem]">
-              <li className="mt-[0.5rem]"><a href="#" className="text-[1.125rem]">Home Cleaning</a></li>
-              <li className="mt-[0.5rem]"><a href="#" className="text-[1.125rem]">Commercial</a></li>
-              <li className="mt-[0.5rem]"><a href="#" className="text-[1.125rem]">Specialized</a></li>
-              <li className="mt-[0.5rem]"><a href="#" className="text-[1.125rem]">Post-Renovation</a></li>
+              <li className="mt-[0.5rem]"><Link to="/services/home-cleaning" className="text-[1.125rem]">Home Cleaning</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/services/commercial" className="text-[1.125rem]">Commercial</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/services/specialized" className="text-[1.125rem]">Specialized</Link></li>
+              <li className="mt-[0.5rem]"><Link to="/services/post-renovation" className="text-[1.125rem]">Post-Renovation</Link></li>
             </ul>
           </div>
           <div>

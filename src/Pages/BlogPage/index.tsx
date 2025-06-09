@@ -11,15 +11,15 @@ const BlogPage = () => {
                 <Navbar />
             </div>
 
-            <div className="w-full max-w-[82rem] px-4 sm:px-8">
+            <div className="w-full max-w-[82rem] px-4 sm:px-1 mt-[55px]">
 
                 {/* Title and Description */}
-                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left mt-8">
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 text-left">
                     <p className="w-full sm:w-[35rem] text-[#0A0A0A] text-[2rem] xs:text-[1.75rem] sm:text-[3rem] font-medium leading-[1.15]">
                         Blog
                     </p>
 
-                    <p className="text-[#5C5C5E] text-[1rem] xs:text-[0.9rem] sm:w-[35rem] sm:text-[1.25rem] text-justify sm:mt-0">
+                    <p className="text-[#5C5C5E] text-[1rem] xs:text-[0.9rem] sm:w-[35rem] sm:text-[1.25rem] leading-6 text-justify sm:mt-0">
                         Deep cleaning removes hidden dirt, allergens, and bacteria, promoting a healthier, safer home.
                     </p>
                 </div>
