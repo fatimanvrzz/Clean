@@ -12,8 +12,9 @@ const Footer = () => {
 
         {/* Logo and Icons */}
         <div className="flex flex-col items-center lg:items-start lg:mb-0">
-          <img src={Logo} alt="CleanAz Logo" className="w-[9.125rem] h-[1.9375rem] mb-[24px]" />
-
+          <Link to="/">
+            <img src={Logo} alt="CleanAz Logo" className="w-[9.125rem] h-[1.9375rem] mb-[24px]" />
+          </Link>
           <Quote />
           <div className="flex flex-col items-center lg:items-start mt-[24px]">
             <div className="flex gap-[0.75rem]">
@@ -27,42 +28,42 @@ const Footer = () => {
                 <img src={whatsup} alt="WhatsApp" className="w-[1.75rem] h-[1.75rem]" />
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Links */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 text-center gap-10 mt-10 lg:text-left">
-          <div>
-            <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Company</h3>
-            <ul className="mt-[1.25rem]">
-              <li className="mt-[0.5rem]"><Link to="/" className="text-[#474749] text-[1.125rem]">Home</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/services" className="text-[#474749] text-[1.125rem]">Services</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/about-us" className="text-[#474749] text-[1.125rem]">About-us</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/blog" className="text-[#474749] text-[1.125rem]">Blog</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Services</h3>
-            <ul className="text-[#474749] mt-[1.25rem]">
-              <li className="mt-[0.5rem]"><Link to="/services/home-cleaning" className="text-[1.125rem]">Home Cleaning</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/services/commercial" className="text-[1.125rem]">Commercial</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/services/specialized" className="text-[1.125rem]">Specialized</Link></li>
-              <li className="mt-[0.5rem]"><Link to="/services/post-renovation" className="text-[1.125rem]">Post-Renovation</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Contact</h3>
-            <p className="text-[#474749] text-[1.125rem] mt-[1.25rem]">• +994 77 332 62 00</p>
-            <p className="text-[#474749] text-[1.125rem] mt-[0.5rem]">• Nizami r. Özbakistan k.24</p>
-          </div>
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="w-full max-w-[81.25rem] border-t border-gray-300 pt-4 text-center text-[1rem] lg:text-left mt-[5.25rem] px-4 text-[#6A6161]">
-        <p>All rights reserved &copy; Clean.az | Designed by Narcis</p>
+      {/* Links */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 text-center gap-10 mt-10 lg:text-left">
+        <div>
+          <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Company</h3>
+          <ul className="mt-[1.25rem]">
+            <li className="mt-[0.5rem]"><Link to="/" className="text-[#474749] text-[1.125rem]">Home</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/services" className="text-[#474749] text-[1.125rem]">Services</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/about-us" className="text-[#474749] text-[1.125rem]">About-us</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/blog" className="text-[#474749] text-[1.125rem]">Blog</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Services</h3>
+          <ul className="text-[#474749] mt-[1.25rem]">
+            <li className="mt-[0.5rem]"><Link to="/services/home-cleaning" className="text-[1.125rem]">Home Cleaning</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/services/commercial" className="text-[1.125rem]">Commercial</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/services/specialized" className="text-[1.125rem]">Specialized</Link></li>
+            <li className="mt-[0.5rem]"><Link to="/services/post-renovation" className="text-[1.125rem]">Post-Renovation</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Contact</h3>
+          <p className="text-[#474749] text-[1.125rem] mt-[1.25rem]">• +994 77 332 62 00</p>
+          <p className="text-[#474749] text-[1.125rem] mt-[0.5rem]">• Nizami r. Özbakistan k.24</p>
+        </div>
       </div>
-    </footer>
+    </div>
+
+      {/* Footer Bottom */ }
+  <div className="w-full max-w-[81.25rem] border-t border-gray-300 pt-4 text-center text-[1rem] lg:text-left mt-[5.25rem] px-4 text-[#6A6161]">
+    <p>All rights reserved &copy; Clean.az | Designed by Narcis</p>
+  </div>
+    </footer >
   );
 };
 

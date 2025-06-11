@@ -32,8 +32,6 @@ const BookServicePage = () => {
           </div>
         </div>
       </div>
-
-
       <Footer />
     </div>
   );

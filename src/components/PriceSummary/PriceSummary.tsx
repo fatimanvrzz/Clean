@@ -11,7 +11,7 @@ const PriceSummary = ({ selected }: Props) => {
     <div className="rounded-3xl px-[60px] py-[57px] bg-[#EFEFEF] sticky top-[25px] h-[500px] flex flex-col">
       <h3 className="text-[30px] font-semibold mb-6">Booking Summary</h3>
       {selected.length === 0 ? (
-        <p className="text-gray-500">No services selected.</p>
+        <p className="text-gray-500"></p>
       ) : (
         <>
           <ul className="list-disc pl-6 space-y-2 flex-1 overflow-y-auto">
