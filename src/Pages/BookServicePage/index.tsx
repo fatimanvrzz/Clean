@@ -8,34 +8,33 @@ export type Service = {
   room: string;
   name: string;
   price: number;
+  count?: number;  
 };
 
 const BookServicePage = () => {
   const [selectedServices, setSelectedServices] = useState<Service[]>([]);
 
   return (
-    <div className="flex flex-col w-full h-screen">
+    <div className="flex flex-col w-full min-h-screen">
       <Navbar />
-      <div className="w-full max-w-[1300px] mx-auto mt-[55px] flex flex-col h-[calc(100vh-55px)]">
-        <h1 className="sm:text-[48px] text-[22px] w-[347px] leading-[60px] mb-[94px]">
+      <div className="w-full max-w-[1300px] mx-auto mt-[55px] flex flex-col">
+        <h1 className="sm:text-[48px] text-[22px] w-full max-w-[347px] leading-[60px] mb-[94px] font-semibold">
           Get a Quote <span className="text-[#0F42FF]">Book a Service</span>
         </h1>
 
-        <div className="flex gap-8 flex-1 overflow-hidden">
-          <div className="flex-1 overflow-y-auto ">
-            <ServiceFilter
-              selected={selectedServices}
-              setSelected={setSelectedServices}
-            />
+        <div className="flex gap-8 min-h-[calc(100vh-55px-94px-100px)] pb-20">
+          <div className="flex-1 overflow-y-auto pr-2">
+            <ServiceFilter selected={selectedServices} setSelected={setSelectedServices} />
           </div>
 
-          <div className="w-full lg:max-w-[400px] flex-shrink-0">
+          <div className="w-[400px]">
             <PriceSummary selected={selectedServices} />
           </div>
         </div>
       </div>
 
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };

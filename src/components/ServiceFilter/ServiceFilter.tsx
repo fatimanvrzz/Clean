@@ -9,7 +9,7 @@ type Props = {
 const roomCategories = ["home", "bathroom", "dining room", "kitchen"];
 
 const detailedServicesData: { [room: string]: Service[] } = {
-  "home": [
+  home: [
     { room: "home", name: "Deep Cleaning", price: 150 },
     { room: "home", name: "Laundry", price: 80 },
     { room: "home", name: "Carpet Washing", price: 120 },
@@ -19,9 +19,9 @@ const detailedServicesData: { [room: string]: Service[] } = {
     { room: "home", name: "Pest Control", price: 110 },
     { room: "home", name: "Electrical Repairs", price: 130 },
     { room: "home", name: "HVAC Maintenance", price: 140 },
-    { room: "home", name: "Furniture Assembly", price: 50 },
+    { room: "home", name: "Furniture Assembly", price: 250 },
   ],
-  "bathroom": [
+  bathroom: [
     { room: "bathroom", name: "Plumbing", price: 70 },
     { room: "bathroom", name: "Tiling", price: 120 },
     { room: "bathroom", name: "Window Cleaning", price: 60 },
@@ -42,7 +42,7 @@ const detailedServicesData: { [room: string]: Service[] } = {
     { room: "dining room", name: "HVAC Maintenance", price: 140 },
     { room: "dining room", name: "Furniture Assembly", price: 50 },
   ],
-  "kitchen": [
+  kitchen: [
     { room: "kitchen", name: "Appliance Cleaning", price: 90 },
     { room: "kitchen", name: "Exhaust Hood Cleaning", price: 100 },
     { room: "kitchen", name: "Window Cleaning", price: 60 },
@@ -54,7 +54,6 @@ const detailedServicesData: { [room: string]: Service[] } = {
     { room: "kitchen", name: "Furniture Assembly", price: 50 },
   ],
 };
-
 
 const ServiceFilter = ({ selected, setSelected }: Props) => {
   const [selectedRoom, setSelectedRoom] = useState<string>("home");
@@ -71,7 +70,7 @@ const ServiceFilter = ({ selected, setSelected }: Props) => {
         )
       );
     } else {
-      setSelected([...selected, service]);
+      setSelected([...selected, { ...service, count: 1 }]);
     }
   };
 
@@ -94,10 +93,22 @@ const ServiceFilter = ({ selected, setSelected }: Props) => {
     };
   }, []);
 
+  // sayını artırmaq/azaltmaq üçün funksiya
+  const changeCount = (service: Service, delta: number) => {
+    setSelected((prev) =>
+      prev.map((s) => {
+        if (s.room === service.room && s.name === service.name) {
+          const newCount = Math.max(1, (s.count ?? 1) + delta);
+          return { ...s, count: newCount };
+        }
+        return s;
+      })
+    );
+  };
+
   return (
     <div className="space-y-6 h-full overflow-y-auto">
-      <div className="space-y-[33px] h-full overflow-y-auto">
-        {/* Choose your service və dropdown */}
+      <div className="space-y-[33px] h-full overflow-hidden">
         <div>
           <h2 className="text-2xl font-semibold mb-4">Choose your service</h2>
 
@@ -125,7 +136,7 @@ const ServiceFilter = ({ selected, setSelected }: Props) => {
             </button>
 
             {dropdownOpen && (
-              <div className="absolute z-10 mt-1 w-[650px] rounded-md bg-[#EFEFEF] shadow-lg ring-1 ring-black ring-opacity-5 max-h-60 overflow-auto">
+              <div className="absolute z-10 mt-1 w-[650px] rounded-md bg-[#EFEFEF] shadow-lg ring-1 ring-black ring-opacity-5 max-h-[300px] overflow-auto">
                 <div className="py-1">
                   {roomCategories.map((room) => (
                     <button
@@ -149,27 +160,55 @@ const ServiceFilter = ({ selected, setSelected }: Props) => {
         {/* Detailed Services */}
         <div>
           <h3 className="text-lg font-medium mb-3">Detailed Services (optional)</h3>
-
           <div className="flex flex-col gap-[15px]">
-            {detailedServicesData[selectedRoom].map((service) => (
-              <button
-                key={service.name}
-                onClick={() => toggleService(service)}
-                className={`w-[650px] px-4 py-3 rounded-lg border text-sm transition text-left ${isSelected(service)
-                    ? "bg-[#0F42FF] text-white border-[#0F42FF]"
-                    : "text-gray-700"
-                  }`}
-              >
-                {service.name} (₼{service.price})
-              </button>
-            ))}
+            {detailedServicesData[selectedRoom].map((service) => {
+              const selectedService = selected.find(
+                (s) => s.room === service.room && s.name === service.name
+              );
+
+              return (
+                <div
+                  key={service.name}
+                  className={`w-[650px] px-4 py-3 rounded-lg border text-sm transition text-left flex justify-between items-center cursor-pointer ${selectedService
+                      ? "bg-[#0F42FF] text-white border-[#0F42FF]"
+                      : "text-gray-700"
+                    }`}
+                  onClick={() => toggleService(service)}
+                >
+                  <span>{service.name} (₼{service.price})</span>
+
+                  {/* Sayını seçmək üçün düymələr */}
+                  {selectedService && (
+                    <div className="flex items-center space-x-2">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          changeCount(service, -1);
+                        }}
+                        className="bg-white rounded-full w-6 h-6 flex items-center justify-center text-[#0F42FF] font-bold"
+                      >
+                        -
+                      </button>
+                      <span>{selectedService.count ?? 1}</span>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          changeCount(service, 1);
+                        }}
+                        className="bg-white rounded-full w-6 h-6 flex items-center justify-center text-[#0F42FF] font-bold"
+                      >
+                        +
+                      </button>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-
     </div>
   );
-
 };
 
 export default ServiceFilter;
