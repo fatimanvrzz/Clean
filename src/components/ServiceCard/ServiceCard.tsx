@@ -41,7 +41,7 @@ const ServiceCard = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="w-full mt-[5.75rem]">
+    <div className="w-full mt-[55px]">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
         <div className="text-[2.5rem] font-medium text-left mb-[2rem]">
           Services

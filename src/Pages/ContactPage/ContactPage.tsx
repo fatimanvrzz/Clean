@@ -40,7 +40,7 @@ const ContactPage = () => {
           <div className="w-full sm:w-[504px] h-auto sm:h-[166px] mt-8 flex flex-col items-center sm:flex-row justify-between gap-10 sm:gap-0">
             <div>
               <div className="text-black">
-                <p className="text-gray-500 text-center sm:text-left">Ünvan</p>
+                <p className="text-gray-500 text-center sm:text-left mt-10 sm:mt-0">Ünvan</p>
                 <p className="underline underline-offset-4 text-gray-900 mt-3">
                   Nizami r. Özbəkistan k.24
                 </p>
@@ -59,8 +59,8 @@ const ContactPage = () => {
                 <p className="underline underline-offset-4 text-gray-900 mt-3">
                   clean.az@gmail.com
                 </p>
-              </div>
-              <div className="text-black mt-10">
+              </div> 
+              <div className="text-black mt-10 mb-10 sm:mb-0">
                 <p className="text-gray-500 text-center sm:text-left">Telefon</p>
                 <p className="underline underline-offset-4 text-gray-900 mt-3">
                   +994 77 332 62 00

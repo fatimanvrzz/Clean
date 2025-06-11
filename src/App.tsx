@@ -6,6 +6,7 @@ import BookServicePage from "./Pages/BookServicePage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Quote from "./components/Quote/Quote";
 import ContactPage from "./Pages/ContactPage/ContactPage";
+import ServicePage from "./Pages/ServicePage/ServicePage";
 
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/services" element={<ServicePage />} />
         <Route path="/book-a-service" element={<BookServicePage />} />
         <Route path="/book-a-service" element={<Quote/>} />
       </Routes>
