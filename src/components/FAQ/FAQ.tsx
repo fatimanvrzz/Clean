@@ -24,7 +24,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "What are your payment options?",
-      answer: "We accept various payment methods including credit cards, debit cards, and online transfers.",
+      answer: "We accept various payment methods including credit cards",
     },
     {
       question: "Are your cleaners insured and background-checked?",
@@ -58,7 +58,9 @@ const FAQ: React.FC = () => {
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${activeIndex === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
                   }`}
               >
-                <p className="mt-2 text-[#474749] text-[1rem] pt-3 w-[35.625rem] pl-9">
+                <p
+                  className="mt-2 text-[#474749] text-[1rem] pt-3 pl-4 w-[260px] h-[60px] lg:w-[35.625rem] lg:h-auto lg:pl-9"
+                >
                   {item.answer}
                 </p>
               </div>
@@ -71,7 +73,7 @@ const FAQ: React.FC = () => {
           src={FAQImage}
           alt="FAQ"
           className="w-full max-w-[400px] lg:max-w-none"
-          style={{ width: '34.8125rem', height: 'auto' }} 
+          style={{ width: '34.8125rem', height: 'auto' }}
         />
       </div>
     </div>
