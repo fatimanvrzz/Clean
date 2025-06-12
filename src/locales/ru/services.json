@@ -1,0 +1,30 @@
+
+{
+    "services": [
+      {
+        "id": 1,
+        "img": "/assets/images/deep-cleaning.svg",
+        "title": "Глубокая уборка",
+        "description": "Комплексная уборка, устраняющая грязь и пыль в каждом уголке."
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/daily-cleaning.svg",
+        "title": "Ежедневная уборка",
+        "description": "Поддерживайте дом или офис в чистоте и порядке ежедневно."
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/laundry.svg",
+        "title": "Стирка",
+        "description": "Чистая и свежая одежда с услугами стирки, сушки и складывания."
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/carpet-washing.svg",
+        "title": "Чистка ковров",
+        "description": "Верните красоту и свежесть вашим коврам с помощью глубокой чистки."
+      }
+    ]
+  }
+  

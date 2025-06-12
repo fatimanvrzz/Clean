@@ -1,0 +1,9 @@
+{
+  "navbar": {
+    "servicesMenu": "Services",
+    "aboutUs": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "bookService": "Book a Service"
+  }
+}

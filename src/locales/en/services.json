@@ -1,0 +1,29 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "img": "/assets/images/deep-cleaning.svg",
+        "title": "Deep Cleaning",
+        "description": "A comprehensive cleaning service designed to tackle dirt, grime, and hidden dust."
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/daily-cleaning.svg",
+        "title": "Daily Cleaning",
+        "description": "Keep your home or office tidy and welcoming with regular cleaning services."
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/laundry.svg",
+        "title": "Laundry",
+        "description": "Get fresh, clean clothes with washing, drying, and folding services."
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/carpet-washing.svg",
+        "title": "Carpet Washing",
+        "description": "Restore the beauty and freshness of your carpets with deep cleaning."
+      }
+    ]
+  }
+  

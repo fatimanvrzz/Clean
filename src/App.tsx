@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Quote from "./components/Quote/Quote";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import ServicePage from "./Pages/ServicePage/ServicePage";
-
+import "./i18n"; 
 
 const App: React.FC = () => {
   return (

@@ -1,0 +1,29 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "img": "/assets/images/deep-cleaning.svg",
+        "title": "Dərin təmizlik",
+        "description": "Hər küncə nüfuz edən təmizləmə xidməti."
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/daily-cleaning.svg",
+        "title": "Gündəlik təmizlik",
+        "description": "Ev və ya ofisinizi gündəlik təmiz saxlayırıq."
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/laundry.svg",
+        "title": "Paltaryuyan xidmət",
+        "description": "Paltarlarınızın yuyulması, qurutulması və qatlanması."
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/carpet-washing.svg",
+        "title": "Xalça təmizliyi",
+        "description": "Xalçalarınızı dərin təmizləmə ilə yeniləyirik."
+      }
+    ]
+  }
+  
