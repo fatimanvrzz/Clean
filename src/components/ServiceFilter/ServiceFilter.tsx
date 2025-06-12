@@ -86,9 +86,6 @@ const ServiceFilter = ({ selected, setSelected }: Props) => {
     }
   };
 
-  const isSelected = (service: Service) =>
-    selected.some((s) => s.room === service.room && s.name === service.name);
-
   const dropdownRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {

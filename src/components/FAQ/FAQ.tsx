@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FAQImage from "../../assets/images/faq-pic.png";
 
 interface FAQItem {

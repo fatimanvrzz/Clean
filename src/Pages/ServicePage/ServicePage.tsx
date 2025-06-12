@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import ServiceCard from '../../components/ServiceCard/ServiceCard'
 import Contact from "../../assets/images/contact.svg";
