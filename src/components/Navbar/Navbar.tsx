@@ -3,7 +3,7 @@ import Logo from "../../assets/images/logo.svg";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
-const BurgerIcon = ({ open }) => {
+const BurgerIcon = ({ open }: { open: boolean }) => {
   return (
     <button
       className="flex flex-col justify-center items-center w-8 h-8 group"
