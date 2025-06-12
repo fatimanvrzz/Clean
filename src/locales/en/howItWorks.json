@@ -1,0 +1,21 @@
+{
+    "title": "How it Works",
+    "items": [
+      {
+        "caption": "Get a Quote",
+        "title": "Easily request a quote before booking your cleaning service",
+        "description": "You can request a quote before booking your service. While the quote provides an estimated cost, you can choose to be contacted by our team for an exact price after receiving it."
+      },
+      {
+        "caption": "Book a Service",
+        "title": "Book a service by filling in the necessary details",
+        "description": "You can book a service after receiving a quote, or skip the quote and directly book the service. Our team will contact you to finalize the details."
+      },
+      {
+        "caption": "Contact Us",
+        "title": "Schedule Your Service by Providing the Required Details",
+        "description": "If you prefer not to book online, you can reach us by phone, provide your details, and our team will assist you promptly."
+      }
+    ]
+  }
+  

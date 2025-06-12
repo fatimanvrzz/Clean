@@ -1,0 +1,21 @@
+{
+    "title": "Necə işləyir",
+    "items": [
+      {
+        "caption": "Qiymət al",
+        "title": "Təmizlik xidmətinizi sifariş etməzdən əvvəl asanlıqla qiymət alın",
+        "description": "Xidməti sifariş etməzdən əvvəl qiymət alaraq təqribi məbləği öyrənə bilərsiniz. İstəsəniz, dəqiq qiymət üçün komandamız sizinlə əlaqə saxlayacaq."
+      },
+      {
+        "caption": "Xidməti sifariş et",
+        "title": "Zəruri məlumatları dolduraraq xidməti sifariş edin",
+        "description": "Qiymət aldıqdan sonra sifariş edə bilərsiniz, yaxud birbaşa sifariş verə bilərsiniz. Komandamız sizinlə əlaqə saxlayaraq detalları təsdiqləyəcək."
+      },
+      {
+        "caption": "Bizimlə əlaqə",
+        "title": "Zəruri məlumatları təqdim edərək xidmətinizi planlaşdırın",
+        "description": "Əgər onlayn sifariş etmək istəmirsinizsə, bizə zəng edərək məlumatlarınızı verə və tez bir zamanda kömək ala bilərsiniz."
+      }
+    ]
+  }
+  

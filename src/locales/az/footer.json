@@ -1,0 +1,21 @@
+{
+    "company": "Şirkət",
+    "services": "Xidmətlər",
+    "contact": "Əlaqə",
+    "links": {
+      "home": "Ana səhifə",
+      "services": "Xidmətlər",
+      "aboutUs": "Haqqımızda",
+      "blog": "Bloq"
+    },
+    "serviceLinks": {
+      "homeCleaning": "Evdə Təmizlik",
+      "commercial": "Kommersiya",
+      "specialized": "Xüsusi",
+      "postRenovation": "Təmir sonrası"
+    },
+    "phone": "+994 77 332 62 00",
+    "address": "Nizami r. Özbakistan k.24",
+    "rights": "Bütün hüquqlar qorunur © Clean.az | Dizayn: Narcis"
+  }
+  

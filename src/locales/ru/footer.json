@@ -1,0 +1,21 @@
+{
+    "company": "Компания",
+    "services": "Услуги",
+    "contact": "Контакты",
+    "links": {
+      "home": "Главная",
+      "services": "Услуги",
+      "aboutUs": "О нас",
+      "blog": "Блог"
+    },
+    "serviceLinks": {
+      "homeCleaning": "Уборка дома",
+      "commercial": "Коммерческая",
+      "specialized": "Специализированная",
+      "postRenovation": "После ремонта"
+    },
+    "phone": "+994 77 332 62 00",
+    "address": "Низами р. Узбекская к.24",
+    "rights": "Все права защищены © Clean.az | Дизайн: Narcis"
+  }
+  

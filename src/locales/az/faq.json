@@ -1,0 +1,29 @@
+{
+    "faq": {
+      "title": "Tez-tez verilən suallar",
+      "description": {
+        "part1": "Təmizlik xidmətlərimizlə bağlı tez-tez verilən suallara cavablar, o cümlədən vaxt təyinatı, qiymətlər, xidmət variantları və ",
+        "highlight": "ekoloji təmiz",
+        "part2": " məhsullarımız haqqında məlumat əldə edin."
+      },
+      "items": [
+        {
+          "question": "Təmizlik zamanı evdə olmalıyam?",
+          "answer": "Xeyr, təmizlik zamanı evdə olmağınız lazım deyil. Komandamız nəzarətsiz səmərəli işləmək üçün təlimatlandırılıb."
+        },
+        {
+          "question": "Ləğv etmə siyasətiniz necədir?",
+          "answer": "Görüşdən 24 saat əvvəl ləğv edə və ya vaxtı dəyişə bilərsiniz, heç bir əlavə ödəniş olmadan."
+        },
+        {
+          "question": "Ödəniş üsullarınız hansılardır?",
+          "answer": "Biz müxtəlif ödəniş üsullarını, o cümlədən kredit kartlarını qəbul edirik."
+        },
+        {
+          "question": "Təmizlikçiləriniz sığortalanıb və yoxlanılıb?",
+          "answer": "Bəli, bütün təmizlikçilərimiz tam sığortalanmış və ciddi yoxlamalardan keçmişdir."
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "company": "Company",
+    "services": "Services",
+    "contact": "Contact",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "aboutUs": "About-us",
+      "blog": "Blog"
+    },
+    "serviceLinks": {
+      "homeCleaning": "Home Cleaning",
+      "commercial": "Commercial",
+      "specialized": "Specialized",
+      "postRenovation": "Post-Renovation"
+    },
+    "phone": "+994 77 332 62 00",
+    "address": "Nizami r. Özbakistan k.24",
+    "rights": "All rights reserved © Clean.az | Designed by Narcis"
+  }
+  

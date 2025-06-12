@@ -1,0 +1,29 @@
+{
+    "faq": {
+      "title": "FAQ",
+      "description": {
+        "part1": "Discover answers to frequently asked questions about our cleaning services, including details on scheduling, pricing, service options, and the",
+        "highlight": " eco-friendly",
+        "part2": " products we use."
+      },
+      "items": [
+        {
+          "question": "Do I need to be home during the cleaning?",
+          "answer": "No, you do not need to be home during the cleaning. Our team is trained to work efficiently without supervision."
+        },
+        {
+          "question": "What is your cancellation policy?",
+          "answer": "You can cancel or reschedule up to 24 hours before your appointment without any charge."
+        },
+        {
+          "question": "What are your payment options?",
+          "answer": "We accept various payment methods including credit cards."
+        },
+        {
+          "question": "Are your cleaners insured and background-checked?",
+          "answer": "Yes, all our cleaners are fully insured and have passed rigorous background checks."
+        }
+      ]
+    }
+  }
+  

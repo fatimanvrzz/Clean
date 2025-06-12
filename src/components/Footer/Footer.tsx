@@ -53,8 +53,8 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="font-normal mb-2 text-[#000000] text-[1.375rem]">Contact</h3>
-          <p className="text-[#474749] text-[1.125rem] mt-[1.25rem]">• +994 77 332 62 00</p>
-          <p className="text-[#474749] text-[1.125rem] mt-[0.5rem]">• Nizami r. Özbakistan k.24</p>
+          <p className="text-[#474749] text-[1.125rem] mt-[1.25rem]">+994 77 332 62 00</p>
+          <p className="text-[#474749] text-[1.125rem] mt-[0.5rem]">Nizami r. Özbakistan k.24</p>
         </div>
       </div>
     </div>
